@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/js/main.07d3183d.js",
+    "main.js": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/js/main.35aed93c.js",
     "index.html": "//neizmailovana.github.io/goit-react-hw-02-phonebook/index.html",
     "main.7acaea2f.css.map": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/js/main.07d3183d.js.map"
+    "main.35aed93c.js.map": "//neizmailovana.github.io/goit-react-hw-02-phonebook/static/js/main.35aed93c.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.35aed93c.js"
   ]
 }
