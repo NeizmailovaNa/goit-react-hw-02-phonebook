@@ -20,7 +20,7 @@ class App extends React.Component {
           color: '#010101'
         }}
       >
-        hhhhh
+    
       </div>
     );
   }
