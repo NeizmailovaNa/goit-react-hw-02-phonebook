@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from './ContactForm/ContactForm'
 import Filter from './Filter/Filter'
 import ContactList from './ContactList/ContactList'
-import css from 'components/App.css'
+import css from 'components/App.module.css'
 
 
 class App extends React.Component {
@@ -48,13 +48,13 @@ class App extends React.Component {
     return (
       <div
         style={{
-          height: '100vh',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-start',
           alignItems: 'center',
           fontSize: 40,
           color: '#010101',
+          backgroundColor: '#dff1ff'
         }}
       >
         <h1 className={css.phonebook}>Phonebook</h1>

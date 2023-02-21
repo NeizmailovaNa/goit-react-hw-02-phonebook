@@ -1,14 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from 'components/Filter/Filter.css'
+import css from 'components/Filter/Filter.module.css'
 
 const Filter = props => {
   return (
-    <form>
-      <label>
+    <form className={css.form}>
+      <label className={css.text} for='filter'>
         Find contacts by name:
-        <input name="filter" onChange={props.onInputHendler}></input>
       </label>
+      <input 
+            className={css.input}
+            id='filter'
+            name="filter" 
+            onChange={props.onInputHendler}
+        >
+        </input>
     </form>
   );
 };

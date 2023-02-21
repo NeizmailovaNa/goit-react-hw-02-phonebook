@@ -1,28 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import css from 'components/ContactList/ContactList.css'
+import css from 'components/ContactList/ContactList.module.css'
 
 class ContactList extends React.Component {
   render() {
     return (
       <>
-        <div>
+        <ul>
           {this.props.filteredContacts.map(contact => {
             return (
-              <ul key={contact.id}>
-                <li>
+              <li key={contact.id}>
+                <p className={css.contact_information}>
                   {contact.name}: {contact.number}
-                </li>
+                </p>
                 <button
                   type="button"
                   onClick={() => this.props.deleteItem(contact.id)}
                 >
                   Delete
                 </button>
-              </ul>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </>
     );
   }

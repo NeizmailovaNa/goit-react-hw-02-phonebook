@@ -1,7 +1,7 @@
 import React from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
-import css from 'components/ContactForm/ContactForm.css'
+import css from 'components/ContactForm/ContactForm.module.css'
 
 class ContactForm extends React.Component {
     state = {
@@ -34,37 +34,44 @@ class ContactForm extends React.Component {
 
     render () {
         return (
-            <form onSubmit={this.formSubmit}>
-                <label>
-                    Name
-                    <input 
-                    className='input_name'
+            <form className={css.form} onSubmit={this.formSubmit}>
+                <label 
+                className={css.contact_name}
+                for='name'>
+                 Name
+                </label>
+                
+                <input 
+                    className={css.input_name}
                     value={this.state.name}
                     onChange={this.inputChange}
+                    id="name"
                     type="text"
                     name="name"
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                     title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                     required
                     />
+
+                <label 
+                className={css.contact_number}
+                for='number'>
+                    Number
                 </label>
 
-                <label>
-                    Number
-                    <input
-                    className='input_number'
+                <input
+                    className={css.input_number}
                     value={this.state.number}
                     onChange={this.inputChange}
+                    id="number"
                     type="tel"
                     name="number"
                     pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
                     title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                     required
                     />
-                </label>
 
                 <button 
-                    className='button'
                     type='submit'>
                     Add contact
                 </button>
